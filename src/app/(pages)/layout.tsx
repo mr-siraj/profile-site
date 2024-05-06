@@ -9,6 +9,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           <Header />
         </section>
         <section className="flex-[1] flex-grow">{children}</section>
+        hello
       </main>
     </>
   );
