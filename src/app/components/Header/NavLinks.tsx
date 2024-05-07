@@ -24,15 +24,16 @@ function NavLinks() {
     },
     {
       id: 4,
-      name: "*Contact",
+      name: "Contact",
       path: "/contact",
       className: "select-none link_dark",
     },
     {
       id: 5,
-      name: "*Blogs",
+      name: "Blogs",
       path: "#",
-      className: "select-none text-white/70 cursor-default hidden",
+      className:
+        "select-none text-white/70 cursor-default  pointer-events-none",
     },
   ];
   const handleCloseMenu = () => {
@@ -42,7 +43,7 @@ function NavLinks() {
     <>
       <nav
         className={cn(
-          `pattern flex flex-col h-screen justify-center absolute top-0 right-0  w-full items-center gap-20 overflow-y-auto
+          `pattern  flex flex-col h-screen justify-center absolute top-0 right-0  w-full items-center gap-20 overflow-y-auto
       md:flex-row  md:static md:gap-10 md:justify-end md:overflow-hidden md:w-fit md:h-fit`,
           !isOpen
             ? " translate-x-[-100%] duration-300 transition-all md:translate-x-0 md:duration-0 md:transition-none"
