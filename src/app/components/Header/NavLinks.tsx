@@ -5,7 +5,7 @@ import { useActivePath } from "@/app/helper/CeckActivePath/CheckActivePath";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 function NavLinks() {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
   const isActive = useActivePath();
   const navLinks = [
     { id: 1, name: "Home", path: "/home", className: "select-none link_dark" },
@@ -66,11 +66,12 @@ function NavLinks() {
         ))}
       </nav>
       <div
-        className="md:hidden absolute top-8 right-10"
+        className="md:hidden absolute top-6 right-10"
         onClick={() => setOpen(!isOpen)}
       >
         <Hamburger
           distance="sm"
+          color="#fff"
           toggled={isOpen}
           toggle={setOpen}
           size={25}

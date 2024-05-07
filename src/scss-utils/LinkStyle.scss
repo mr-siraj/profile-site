@@ -21,6 +21,7 @@
 .link_dark {
   position: relative;
   transition: width 0.3s linear;
+  color: #ffffff;
   user-select: none;
   &:hover {
     &::before {
