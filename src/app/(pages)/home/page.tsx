@@ -4,7 +4,7 @@ import {} from "react";
 function HomePage() {
   return (
     <>
-      <PageWrapper className="animate-page min-h-[70vh] flex justify-center flex-col relative top-10">
+      <PageWrapper className="animate-page min-h-[70vh] flex justify-center flex-col ">
         <h1 className="text-3xl md:text-5xl md:tracking-wider font-extrabold ">
           I &apos; M &nbsp; MR ZLAAM
         </h1>
