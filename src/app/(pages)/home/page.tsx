@@ -4,7 +4,7 @@ import {} from "react";
 function HomePage() {
   return (
     <>
-      <PageWrapper className="animate-page overflow-x-hidden">
+      <PageWrapper className="animate-page overflow-x-hidden ">
         <section className=" min-h-[70vh] md:min-h-[60vh] flex justify-center flex-col py-12   ">
           <h1 className="text-3xl md:text-5xl md:tracking-wider font-extrabold ">
             I &apos; M &nbsp; MR ZLAAM
