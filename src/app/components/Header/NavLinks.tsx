@@ -24,15 +24,15 @@ function NavLinks() {
     },
     {
       id: 4,
-      name: "Contact",
+      name: "*Contact",
       path: "/contact",
       className: "select-none link_dark",
     },
     {
       id: 5,
-      name: "Blogs",
+      name: "*Blogs",
       path: "#",
-      className: "select-none text-white/70 cursor-default",
+      className: "select-none text-white/70 cursor-default hidden",
     },
   ];
   const handleCloseMenu = () => {
