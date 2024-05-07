@@ -1,9 +1,9 @@
 "use client";
+import PageWrapper from "@/components/PageWrapper/PageWrapper";
+import Image from "next/image";
 import Link from "next/link";
 import {} from "react";
 import NavLinks from "./NavLinks";
-import Image from "next/image";
-import PageWrapper from "@/components/PageWrapper/PageWrapper";
 
 function Header() {
   return (

@@ -1,6 +1,3 @@
-import PageWrapper from "@/components/PageWrapper/PageWrapper";
-import {} from "react";
-
 function HomePage() {
   return (
     <>

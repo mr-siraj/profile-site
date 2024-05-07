@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
 import Cursor from "@/utils/Cursor/Cursor";
+import type { Metadata } from "next";
 import { Exo } from "next/font/google";
-import "./globals.scss";
 import { cn } from "../lib/utils";
+import "./globals.scss";
 
 const exo = Exo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

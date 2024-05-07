@@ -1,9 +1,9 @@
 "use client";
-import { Fragment, useState } from "react";
-import { Divide as Hamburger } from "hamburger-react";
 import { useActivePath } from "@/app/helper/CeckActivePath/CheckActivePath";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Divide as Hamburger } from "hamburger-react";
+import Link from "next/link";
+import { Fragment, useState } from "react";
 function NavLinks() {
   const [isOpen, setOpen] = useState(false);
   const isActive = useActivePath();
