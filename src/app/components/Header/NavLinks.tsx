@@ -33,7 +33,9 @@ function NavLinks() {
           <Link
             href={data.path && data.path}
             key={data.name}
-            className={isActive(data.path) ? "text-lg font-semibold" : ""}
+            className={`link_light ${
+              isActive(data.path) ? "text-lg font-medium" : ""
+            }`}
           >
             {data.name}
           </Link>

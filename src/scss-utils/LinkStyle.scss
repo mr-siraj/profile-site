@@ -1,0 +1,44 @@
+.link_light {
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+}
+.link_light:hover::before {
+  transform: scale(1.04);
+}
+
+.link_light::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  transition: transform 0.3s linear;
+  width: 100%;
+  background: #000000;
+  transform: scale(0);
+}
+
+.link_dark {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  font-family: Arial;
+  user-select: none;
+}
+.link_dark:hover::before {
+  transform: scale(1);
+}
+
+.link_dark::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  transition: transform 0.2s linear;
+  width: 100%;
+  background: #ffffff;
+  transform: scale(0);
+}
