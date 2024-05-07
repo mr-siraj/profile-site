@@ -9,3 +9,9 @@ function ContactPage() {
 }
 
 export default ContactPage;
+export const metadata = {
+  title: "Zlaam | Contact",
+  description: "",
+  creator: "mr-zlaam",
+  publisher: "mr-zlaam",
+};
