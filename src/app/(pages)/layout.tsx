@@ -2,13 +2,12 @@ import {} from "react";
 import "./layout.scss";
 import "../../scss-utils/LinkStyle.scss";
 import Header from "@/app/components/Header/Header";
-import TopLoadingBar from "@/utils/top-loading-bar/TopLoadingBar";
-
+import NextTopLoader from "nextjs-toploader";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <main className="flex pattern_dark  flex-col relative min-h-screen">
-        <TopLoadingBar />
+        <NextTopLoader />
         <section className="sticky top-0">
           <Header />
         </section>
