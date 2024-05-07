@@ -1,6 +1,7 @@
 .link_light {
   position: relative;
   transition: width 0.3s linear;
+  user-select: none;
   &:hover {
     &::before {
       width: 110%;
@@ -20,6 +21,7 @@
 .link_dark {
   position: relative;
   transition: width 0.3s linear;
+  user-select: none;
   &:hover {
     &::before {
       width: 110%;
