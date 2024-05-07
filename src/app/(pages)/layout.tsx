@@ -10,18 +10,20 @@ function Layout({ children }: { children: React.ReactNode }) {
       <main className="flex pattern_dark  flex-col  min-h-screen">
         <NextTopLoader
           color="#ffffff"
-          initialPosition={1}
+          initialPosition={0}
           height={3}
           showSpinner={false}
-          easing="ease"
+          easing="linear"
           zIndex={1600}
           showAtBottom={false}
         />
-        <Header />
+        <header className="z-[999] sticky top-0 ">
+          <Header />
+        </header>
         <section className="flex-[1] flex-grow relative z-[998]">
-          {children}
+          <PageWrapper>{children}</PageWrapper>
         </section>
-        <footer className="absolute bottom-2 right-5 text-xs z-[998]">
+        <footer className="absolute md:fixed bottom-2 right-5 text-xs z-[998]">
           &copy; 2024 &nbsp;&nbsp;&nbsp;&nbsp;Zlaam
         </footer>
       </main>
