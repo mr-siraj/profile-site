@@ -13,7 +13,7 @@ function NavLinks() {
       id: 2,
       name: "Expertise",
       path: "/expertise",
-      className: "select-none link_dark",
+      className: "select-none link_dark ",
     },
     {
       id: 3,
