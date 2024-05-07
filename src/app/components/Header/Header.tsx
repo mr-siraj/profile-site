@@ -3,7 +3,7 @@ import Link from "next/link";
 import {} from "react";
 import NavLinks from "./NavLinks";
 import Image from "next/image";
-
+import { Menu } from "lucide-react";
 function Header() {
   return (
     <>
@@ -14,6 +14,7 @@ function Header() {
           </Link>
         </div>
         <NavLinks />
+        <Menu />
       </section>
     </>
   );
