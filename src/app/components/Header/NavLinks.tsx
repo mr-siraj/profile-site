@@ -6,7 +6,7 @@ import { useActivePath } from "@/app/helper/CeckActivePath/CheckActivePath";
 import Link from "next/link";
 import { cn } from "@/app/lib/utils";
 function NavLinks() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
   const isActive = useActivePath();
   const navLinks = [
     { id: 1, name: "Home", path: "/home" },
@@ -23,10 +23,10 @@ function NavLinks() {
       <nav
         className={cn(
           `flex flex-col h-screen justify-center absolute top-0 right-0 pattern w-full items-center gap-20 
-      md:flex-row md:h-0 md:static md:gap-10 md:justify-end overflow-y-auto`,
+      md:flex-row  md:static md:gap-10 md:justify-end overflow-y-auto`,
           !isOpen
-            ? "translate-x-[-100%] duration-300 transition-all"
-            : "translate-x-0 duration-300 transition-all"
+            ? "translate-x-[-100%] duration-300 transition-all md:translate-x-0 md:duration-0 md:transition-none"
+            : "translate-x-0 duration-300 transition-all md:translate-x-0 md:duration-0 md:transition-none"
         )}
       >
         {navLinks.map((data) => (
