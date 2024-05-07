@@ -34,7 +34,7 @@ function NavLinks() {
             <Link
               onClick={handleCloseMenu}
               href={data.path && data.path}
-              className={`link_light  tracking-wide text-[1.2rem] ${
+              className={`link_dark  tracking-wide text-[1.2rem] ${
                 isActive(data.path) ? "hidden" : ""
               }`}
             >

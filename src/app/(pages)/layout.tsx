@@ -7,7 +7,7 @@ import TopLoadingBar from "@/utils/top-loading-bar/TopLoadingBar";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <main className="flex pattern  flex-col relative min-h-screen">
+      <main className="flex pattern_dark  flex-col relative min-h-screen">
         <TopLoadingBar />
         <section className="sticky top-0">
           <Header />
