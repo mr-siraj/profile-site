@@ -11,7 +11,6 @@ $default: url("/cursor_svg/cursor.svg");
 }
 
 * {
-  cursor: $default, default;
   & a {
     cursor: $pointer, pointer;
     user-select: none;
@@ -77,5 +76,19 @@ $default: url("/cursor_svg/cursor.svg");
     background-size: 60px 60px;
     background-position: -5px -5px;
     color: #ffffff;
+  }
+}
+.animate-forward {
+  animation: backAndForth 2s ease-in-out infinite alternate; /* Animation applied */
+}
+@keyframes backAndForth {
+  0% {
+    right: 50px;
+  } /* Start position */
+  50% {
+    right: 80px;
+  }
+  100% {
+    right: 50px;
   }
 }
