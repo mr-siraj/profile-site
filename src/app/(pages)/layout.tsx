@@ -3,6 +3,7 @@ import "./layout.scss";
 import "../../scss-utils/LinkStyle.scss";
 import Header from "@/app/components/Header/Header";
 import NextTopLoader from "nextjs-toploader";
+import PageWrapper from "@/components/PageWrapper/PageWrapper";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
@@ -22,7 +23,9 @@ function Layout({ children }: { children: React.ReactNode }) {
           showAtBottom={false}
         />{" "}
         <section className="sticky top-0">
-          <Header />
+          <PageWrapper>
+            <Header />
+          </PageWrapper>
         </section>
         <section className="flex-[1] flex-grow">{children}</section>
         <footer className="absolute bottom-2 right-5 text-xs">
