@@ -1,11 +1,12 @@
-.link_light {
+link_light {
   color: #000000;
   position: relative;
   text-decoration: none;
-  user-select: none;
+  font-family: Arial;
+  font-weight: 500;
 }
 .link_light:hover::before {
-  transform: scale(1.04);
+  width: 104%;
 }
 
 .link_light::before {
@@ -14,10 +15,9 @@
   bottom: -2px;
   left: 0;
   height: 2px;
-  transition: transform 0.3s linear;
-  width: 100%;
+  transition: width 0.2s linear;
+  width: 0%;
   background: #000000;
-  transform: scale(0);
 }
 
 .link_dark {
@@ -25,10 +25,10 @@
   position: relative;
   text-decoration: none;
   font-family: Arial;
-  user-select: none;
+  font-weight: 500;
 }
 .link_dark:hover::before {
-  transform: scale(1);
+  width: 104%;
 }
 
 .link_dark::before {
@@ -37,8 +37,7 @@
   bottom: -2px;
   left: 0;
   height: 2px;
-  transition: transform 0.2s linear;
-  width: 100%;
+  transition: width 0.2s linear;
+  width: 0%;
   background: #ffffff;
-  transform: scale(0);
 }

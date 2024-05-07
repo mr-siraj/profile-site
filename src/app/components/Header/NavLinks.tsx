@@ -10,8 +10,8 @@ function NavLinks() {
       path: "/home",
     },
     {
-      name: "About",
-      path: "/about",
+      name: "Expertise",
+      path: "/expertise",
     },
     {
       name: "Projects",
@@ -33,7 +33,7 @@ function NavLinks() {
           <Link
             href={data.path && data.path}
             key={data.name}
-            className={`link_light ${
+            className={`link_light relative tracking-wide text-[1.2rem] ${
               isActive(data.path) ? "text-lg font-medium" : ""
             }`}
           >
