@@ -11,8 +11,8 @@ const exo = Exo({
 
 export const metadata: Metadata = {
   title: "Portfolio | Zlaam",
-  description:
-    "I am Zlaam, a dedicated and skilled full-stack web app developer with several years of hands-on experience. My true passion lies in transforming concepts into tangible digital solutions, and I wholeheartedly embrace new challenges that come my way. I am proficient in languages such as JavaScript and Python, and I specialize in creating dynamic and responsive web applications. My goal is to continue pushing the boundaries of innovation in the ever-evolving field of web development. ",
+  description: `I ' M   MR ZLAAM
+A full-stack developer fueled by a deep passion for crafting user-friendly and efficient web applications. With 2 years of experience under my belt, I've tackled a diverse range of projects – from streamlined landing pages that capture attention to complex web platforms that power intricate functionalities. Beyond the technical expertise, what truly excites me is the user experience. While I thrive in the problem-solving world of coding, I also value a good mental challenge outside of it. When I'm not coding, I enjoy Boxing & Chess. `,
   creator: "mr-zlaam",
   publisher: "mr-zlaam",
 };

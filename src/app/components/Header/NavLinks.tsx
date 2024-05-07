@@ -66,7 +66,7 @@ function NavLinks() {
         ))}
       </nav>
       <div
-        className="md:hidden absolute top-6 right-10"
+        className="md:hidden absolute top-7 right-10"
         onClick={() => setOpen(!isOpen)}
       >
         <Hamburger

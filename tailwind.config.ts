@@ -20,7 +20,7 @@ const config: Config = {
     },
     extend: {
       animation: {
-        page: "home ease-in-out backwards 0.8s",
+        page: "page ease-in-out backwards 0.8s",
       },
       keyframes: {
         page: {
