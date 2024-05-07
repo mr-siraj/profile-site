@@ -17,13 +17,11 @@ function Layout({ children }: { children: React.ReactNode }) {
           zIndex={1600}
           showAtBottom={false}
         />
-        <section className="sticky top-0">
-          <PageWrapper>
-            <Header />
-          </PageWrapper>
+        <Header />
+        <section className="flex-[1] flex-grow relative z-[998]">
+          {children}
         </section>
-        <section className="flex-[1] flex-grow">{children}</section>
-        <footer className="absolute bottom-2 right-5 text-xs">
+        <footer className="absolute bottom-2 right-5 text-xs z-[998]">
           &copy; 2024 &nbsp;&nbsp;&nbsp;&nbsp;Zlaam
         </footer>
       </main>
