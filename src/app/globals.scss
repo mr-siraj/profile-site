@@ -9,6 +9,7 @@ $default: url("/cursor_svg/cursor.svg");
 .pointer {
   cursor: $pointer, pointer;
 }
+
 * {
   cursor: $default, default;
   & a {
@@ -62,5 +63,19 @@ $default: url("/cursor_svg/cursor.svg");
 @media screen and (max-width: 768px) {
   *::-webkit-scrollbar {
     width: 0.5px; /* Adjust the width as needed */
+  }
+}
+@media screen and (max-width: 250px) {
+  * {
+    visibility: hidden;
+    background: #28282b;
+    background-image: linear-gradient(
+      32deg,
+      rgba(8, 8, 8, 0.74) 30px,
+      transparent
+    );
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+    color: #ffffff;
   }
 }
