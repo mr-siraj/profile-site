@@ -4,7 +4,7 @@ import {} from "react";
 function HomePage() {
   return (
     <>
-      <PageWrapper className="border border-white ">
+      <PageWrapper className="border border-white animate-page ">
         <div>Hello world</div>
       </PageWrapper>
     </>

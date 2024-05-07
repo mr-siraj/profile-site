@@ -19,6 +19,22 @@ const config: Config = {
       black: "900",
     },
     extend: {
+      animation: {
+        page: "home ease-in-out backwards 0.8s",
+      },
+      keyframes: {
+        page: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(5%)",
+          },
+          "100%%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
