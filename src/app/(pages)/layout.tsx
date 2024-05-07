@@ -7,7 +7,7 @@ import PageWrapper from "@/components/PageWrapper/PageWrapper";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <main className="flex pattern_dark  flex-col relative min-h-screen">
+      <main className="flex pattern_dark  flex-col  min-h-screen">
         <NextTopLoader
           color="#ffffff"
           initialPosition={1}
@@ -16,7 +16,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           easing="ease"
           zIndex={1600}
           showAtBottom={false}
-        />{" "}
+        />
         <section className="sticky top-0">
           <PageWrapper>
             <Header />

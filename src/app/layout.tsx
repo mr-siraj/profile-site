@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(exo.className, "font-medium default")}>
+      <body className={cn(exo.className, "font-medium default relative")}>
         <Cursor />
         {children}
       </body>
