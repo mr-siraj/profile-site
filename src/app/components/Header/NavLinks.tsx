@@ -42,7 +42,7 @@ function NavLinks() {
     <>
       <nav
         className={cn(
-          `pattern  flex flex-col h-screen justify-center absolute top-0 right-0  w-full items-center gap-20 overflow-y-auto
+          `pattern z-[998]  flex flex-col h-screen justify-center absolute top-0 right-0  w-full items-center gap-20 overflow-y-auto
       md:flex-row  md:static md:gap-10 md:justify-end md:overflow-hidden md:w-fit md:h-fit`,
           !isOpen
             ? " translate-x-[-100%] duration-300 transition-all md:translate-x-0 md:duration-0 md:transition-none"
@@ -66,7 +66,7 @@ function NavLinks() {
         ))}
       </nav>
       <div
-        className="md:hidden absolute top-7 right-10"
+        className="md:hidden absolute top-7 z-[999] right-10"
         onClick={() => setOpen(!isOpen)}
       >
         <Hamburger
