@@ -25,7 +25,9 @@ function Layout({ children }: { children: React.ReactNode }) {
           <Header />
         </section>
         <section className="flex-[1] flex-grow">{children}</section>
-        hello
+        <footer className="absolute bottom-2 right-5 text-xs">
+          &copy; 2024 &nbsp;&nbsp;&nbsp;&nbsp;Zlaam
+        </footer>
       </main>
     </>
   );
