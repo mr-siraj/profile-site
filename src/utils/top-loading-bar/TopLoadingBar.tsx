@@ -12,7 +12,7 @@ const TopLoadingBar = () => {
   return (
     <div>
       <LoadingBar
-        color="#000"
+        color="#0000FF"
         progress={progress}
         transitionTime={100}
         waitingTime={800}
