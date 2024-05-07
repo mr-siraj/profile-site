@@ -22,8 +22,8 @@ function NavLinks() {
     <>
       <nav
         className={cn(
-          `flex flex-col h-screen justify-center absolute top-0 right-0 pattern w-full items-center gap-20 
-      md:flex-row  md:static md:gap-10 md:justify-end overflow-y-auto`,
+          `pattern flex flex-col h-screen justify-center absolute top-0 right-0  w-full items-center gap-20 overflow-y-auto
+      md:flex-row  md:static md:gap-10 md:justify-end md:overflow-hidden md:w-fit md:h-fit`,
           !isOpen
             ? "translate-x-[-100%] duration-300 transition-all md:translate-x-0 md:duration-0 md:transition-none"
             : "translate-x-0 duration-300 transition-all md:translate-x-0 md:duration-0 md:transition-none"
@@ -34,7 +34,7 @@ function NavLinks() {
             <Link
               onClick={handleCloseMenu}
               href={data.path && data.path}
-              className={`link_light relative tracking-wide text-[1.2rem] ${
+              className={`link_light  tracking-wide text-[1.2rem] ${
                 isActive(data.path) ? "text-lg font-medium" : ""
               }`}
             >

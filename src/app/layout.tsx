@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Exo, Jersey_20_Charted } from "next/font/google";
+import Cursor from "@/utils/Cursor/Cursor";
+import { Exo } from "next/font/google";
 import "./globals.scss";
 
 const exo = Exo({
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={exo.className + "font-normal"}>{children}</body>
+      <body className={exo.className + "font-normal"}>
+        <Cursor />
+        {children}
+      </body>
     </html>
   );
 }
