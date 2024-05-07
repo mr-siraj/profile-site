@@ -1,9 +1,12 @@
+import PageWrapper from "@/components/PageWrapper/PageWrapper";
 import {} from "react";
 
 function HomePage() {
   return (
     <>
-      <section className="">HomePage</section>
+      <PageWrapper className="border border-white ">
+        <div>Hello world</div>
+      </PageWrapper>
     </>
   );
 }

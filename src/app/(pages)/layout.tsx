@@ -8,7 +8,8 @@ function Layout({ children }: { children: React.ReactNode }) {
     <>
       <main className="flex pattern_dark  flex-col relative min-h-screen">
         <NextTopLoader
-          color="#2299DD"
+          // color="#2299DD"
+          color="#ffffff"
           initialPosition={1}
           crawlSpeed={200}
           height={3}
