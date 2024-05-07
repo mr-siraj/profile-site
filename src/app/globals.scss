@@ -79,7 +79,7 @@ $default: url("/cursor_svg/cursor.svg");
   }
 }
 .animate-forward {
-  animation: backAndForth 2s ease-in-out infinite alternate; /* Animation applied */
+  animation: backAndForth 2s ease-in-out backwards infinite alternate; /* Animation applied */
 }
 @keyframes backAndForth {
   0% {

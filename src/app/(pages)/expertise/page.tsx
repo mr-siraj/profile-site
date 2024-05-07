@@ -1,5 +1,5 @@
 export default function ExpertisePage() {
-  return <div>Expertise</div>;
+  return <div className="relative">Expertise</div>;
 }
 
 export const metadata = {
