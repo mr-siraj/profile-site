@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <section className="h-[100px] flex justify-between items-center  lg :px-[70px] md:py-20  relative   pattern_dark text-white">
-        <div className="logo">
+        <div className="logo ">
           <Link href="/home" className="select-none">
             <Image src="/logo/image.png" alt="zlaam" width={75} height={75} />
           </Link>
