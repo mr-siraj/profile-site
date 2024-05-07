@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Cursor from "@/utils/Cursor/Cursor";
 import { Exo } from "next/font/google";
 import "./globals.scss";
+import { cn } from "./lib/utils";
 
 const exo = Exo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={exo.className + "font-normal"}>
+      <body className={cn(exo.className, "font-medium")}>
         <Cursor />
         {children}
       </body>
