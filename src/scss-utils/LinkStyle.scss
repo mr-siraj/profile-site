@@ -36,3 +36,11 @@
     transition: width 0.3s linear;
   }
 }
+@media screen and (max-width: 768px) {
+  .link_light::before {
+    height: 2px;
+  }
+  .link_dark::before {
+    height: 2px;
+  }
+}
