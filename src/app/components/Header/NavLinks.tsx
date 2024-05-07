@@ -35,7 +35,7 @@ function NavLinks() {
               onClick={handleCloseMenu}
               href={data.path && data.path}
               className={`link_light  tracking-wide text-[1.2rem] ${
-                isActive(data.path) ? "text-lg font-medium" : ""
+                isActive(data.path) ? "hidden" : ""
               }`}
             >
               {data.name}
