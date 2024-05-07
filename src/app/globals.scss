@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+$pointer: url("/cursor_svg/pointer.svg");
+$default: url("/cursor_svg/cursor.svg");
+.default {
+  cursor: $default, default;
+}
+.pointer {
+  cursor: $pointer, pointer;
+}
 * {
+  cursor: $default, default;
   & a {
+    cursor: $pointer, pointer;
     user-select: none;
     -webkit-user-drag: none;
   }

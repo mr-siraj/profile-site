@@ -14,7 +14,7 @@
 
 .dot {
   background: transparent;
-  border: 1px solid #ffffff80;
+  border: 2px solid #ffffffa6;
   box-shadow: inset 2px 2px 10px #525252;
   padding: 23px;
   height: 60px;
@@ -22,8 +22,8 @@
   display: block;
   border-radius: 50%;
   position: relative;
-  bottom: 15px;
-  right: 18px;
+  bottom: 22px;
+  right: 25px;
 }
 @media screen and (max-width: 768px) {
   .cursor {
