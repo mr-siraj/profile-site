@@ -4,7 +4,7 @@ import { Menu } from "lucide-react";
 import { Divide as Hamburger } from "hamburger-react";
 import { useActivePath } from "@/app/helper/CeckActivePath/CheckActivePath";
 import Link from "next/link";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 function NavLinks() {
   const [isOpen, setOpen] = useState(true);
   const isActive = useActivePath();
