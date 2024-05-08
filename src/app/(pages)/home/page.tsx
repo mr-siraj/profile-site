@@ -1,7 +1,7 @@
 function HomePage() {
   return (
     <>
-      <section className="animate-page overflow-x-hidden  min-h-[70vh] md:min-h-[60vh] flex justify-center flex-col py-12   ">
+      <main className="animate-page overflow-x-hidden  min-h-[70vh] md:min-h-[60vh] flex justify-center flex-col py-12   ">
         <h1 className="text-3xl md:text-5xl md:tracking-wider font-extrabold ">
           I &apos; M &nbsp; MR ZLAAM
         </h1>
@@ -16,7 +16,7 @@ function HomePage() {
           good mental challenge outside of it. When I&apos;m not coding, I enjoy
           Boxing & Chess.
         </p>
-      </section>
+      </main>
     </>
   );
 }

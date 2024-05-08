@@ -2,8 +2,8 @@ import Expertise_Card from "@/components/Expertise_Card/Expertise_Card";
 import expertiseData from "./expertise.json";
 export default function ExpertisePage() {
   return (
-    <section className="flex flex-col animate-page">
-      <div className="my-2 flex-1">
+    <main className="flex flex-col animate-page">
+      <section className="my-2 flex-1">
         <h1 className="font-bold md:text-5xl text-3xl">My Expertise!</h1>
         <h2 className="leading-[2rem] tracking-wider sm:text-xl my-4 text-base">
           I am proficient in languages such as JavaScript and Python, and I
@@ -11,8 +11,8 @@ export default function ExpertisePage() {
           goal is to continue pushing the boundaries of innovation in the
           ever-evolving field of web development.
         </h2>
-      </div>
-      <div className="my-2 flex-1 flex flex-col">
+      </section>
+      <section className="my-2 flex-1 flex flex-col">
         <h1 className="font-bold md:text-5xl text-3xl">
           Technologies I use in Daily Life :
         </h1>
@@ -25,8 +25,8 @@ export default function ExpertisePage() {
             );
           })}
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
 
