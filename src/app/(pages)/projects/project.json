@@ -5,7 +5,7 @@
       "image": "https://live.staticflickr.com/65535/53558228700_72d2559b6a_z.jpg"
     },
     "project_url": "https://zlaamgallery.netlify.app",
-    "project_title": "Image Gallery",
+    "project_title": "Image-Gallery",
     "project_desc": "ZlaamGallery stands as a hallmark creation among my portfolio of apps. Renowned for its user-friendly interface and aesthetically pleasing gradient backgrounds, it exemplifies simplicity and elegance. Offering a plethora of functionalities, users can seamlessly create accounts, share images through a Content Delivery Network (CDN) link, and effortlessly toggle between dark and light modes. The app empowers users by providing access only to their uploaded photos, ensuring a personalized experience. Additionally, users can log out at their convenience, further enhancing the app's user-centric design."
   },
   {
@@ -32,7 +32,7 @@
       "image": "https://live.staticflickr.com/65535/53558228695_663d01611b_z.jpg"
     },
     "project_url": "https://animequizler.netlify.app/",
-    "project_title": "Anime Quizler",
+    "project_title": "Anime-Quizler",
     "project_desc": "As an avid anime lover, I built this quiz anime web app to keep myself entertained. But I've retrieved all of the information using a Restful API. This app is similar to an exam in that it has multiple-choice questions from which you must pick one of four. Finally, you will be given the results, which will tell you how many questions you were able to answer."
   },
   {
