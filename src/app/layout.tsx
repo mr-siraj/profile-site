@@ -31,7 +31,7 @@ export default function RootLayout({
           "font-medium default relative pattern_dark"
         )}
       >
-        <NextTopLoader showSpinner={false} color="#ffffff" />
+        <NextTopLoader showSpinner={false} color="#8d8dff" />
         <Cursor />
         {children}
       </body>
