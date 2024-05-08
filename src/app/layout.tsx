@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Exo } from "next/font/google";
 import { cn } from "../lib/utils";
 import "./globals.scss";
+import NextTopLoader from "nextjs-toploader";
 
 const exo = Exo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(exo.className, "font-medium default relative")}>
+        <NextTopLoader showSpinner={false} color="#ffffff" />
         <Cursor />
         {children}
       </body>
