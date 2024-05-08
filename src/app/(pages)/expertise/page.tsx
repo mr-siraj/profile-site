@@ -2,7 +2,7 @@ import Expertise_Card from "@/components/Expertise_Card/Expertise_Card";
 import expertiseData from "./expertise.json";
 export default function ExpertisePage() {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col animate-page">
       <div className="my-2 flex-1">
         <h1 className="font-bold md:text-5xl text-3xl">My Expertise!</h1>
         <h2 className="leading-[2rem] tracking-wider sm:text-xl my-4 text-base">
