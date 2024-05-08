@@ -53,6 +53,7 @@ function NavLinks() {
         {navLinks.map((data) => (
           <Fragment key={data.id}>
             <Link
+              title={data.name}
               onClick={handleCloseMenu}
               href={data.path && data.path}
               className={cn(
