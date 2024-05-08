@@ -1,10 +1,30 @@
 import { Metadata } from "next";
-import {} from "react";
-
+import Link from "next/link";
+import { ArrowDown } from "lucide-react";
 function ProjectPage() {
   return (
     <>
-      <section>ProjectPage</section>
+      <main className="flex flex-col">
+        <h1 className="md:text-4xl text-3xl text-center font-bold">
+          Some Projects
+        </h1>
+        <h2 className="w-fit mx-auto flex my-4 gap-2 items-center pointer ">
+          <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1WjNv4PsACYUfT3WpZHbuVWJUfc0uIBru/view?usp=drive_link"
+          >
+            <ArrowDown />
+          </Link>
+          <Link
+            href="https://drive.google.com/file/d/1WjNv4PsACYUfT3WpZHbuVWJUfc0uIBru/view?usp=drive_link"
+            target="_blank"
+            className="hover:underline text-xl font-semibold"
+          >
+            Resume
+          </Link>
+        </h2>
+        <section></section>
+      </main>
     </>
   );
 }
