@@ -32,7 +32,7 @@ function Project_Card({ projectData }: { projectData: ProjectDataType }) {
           <div className="link_container">
             <Link
               className={`modal_navigator justify-center flex items-center gap-2`}
-              href={`#`}
+              href={`/projects/${projectData.project_title}`}
             >
               <span className="link_text">View Site</span>
               <span className="">
