@@ -41,6 +41,7 @@ function NavLinks() {
   return (
     <>
       <nav
+        onClick={handleCloseMenu}
         className={cn(
           `pattern_dark z-[998]  flex flex-col h-screen justify-center absolute top-0 right-0  w-full items-center gap-20 overflow-y-auto
       md:flex-row  md:static md:gap-10 md:justify-end md:overflow-hidden md:w-fit md:h-fit`,
