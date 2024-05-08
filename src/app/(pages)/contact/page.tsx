@@ -35,11 +35,33 @@ function ContactPage() {
   ];
   return (
     <>
-      <h1 className=" flex items-center justify-center h-10 text-center text-2xl">
+      <h1 className=" flex items-center justify-center h-10 text-center sm:text-2xl text-xl ">
         <Link href={"#"} className="link_dark">
           Read This Before Contact
         </Link>
       </h1>
+      <section className="">
+        <div className="w-fit mx-auto my-4">
+          {contactLinks.map((data) => {
+            return (
+              <div
+                key={data.IconName}
+                className="flex gap-4 my-10 sm:my-5 items-center"
+              >
+                <span className="sm:text-4xl text-2xl  ">
+                  <data.Icon />
+                </span>
+                <Link
+                  className="link_dark my-2 sm:text-4xl text-2xl font-semibold"
+                  href={data.path}
+                >
+                  {data.IconName}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </>
   );
 }
