@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
+import Project_Card from "@/components/Project_Card/Project_Card";
+import projectdata from "./project.json";
 function ProjectPage() {
   return (
     <>
@@ -23,7 +25,17 @@ function ProjectPage() {
             Resume
           </Link>
         </h2>
-        <section></section>
+        <section>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5 py-5">
+            {projectdata.map((projectData) => {
+              return (
+                <div key={projectData.id}>
+                  <Project_Card projectData={projectData} />
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </main>
     </>
   );
