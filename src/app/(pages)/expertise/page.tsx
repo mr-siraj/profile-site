@@ -5,7 +5,7 @@ export default function ExpertisePage() {
     <section className="flex flex-col">
       <div className="my-2 flex-1">
         <h1 className="font-bold md:text-5xl text-3xl">My Expertise!</h1>
-        <h2 className="leading-[2rem] tracking-wider text-xl my-4">
+        <h2 className="leading-[2rem] tracking-wider sm:text-xl my-4 text-base">
           I am proficient in languages such as JavaScript and Python, and I
           specialize in creating dynamic and responsive web applications. My
           goal is to continue pushing the boundaries of innovation in the
@@ -16,7 +16,7 @@ export default function ExpertisePage() {
         <h1 className="font-bold md:text-5xl text-3xl">
           Technologies I use in Daily Life :
         </h1>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 py-4">
           {expertiseData?.map((data) => {
             return (
               <div key={data.title}>

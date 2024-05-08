@@ -35,16 +35,6 @@
     "content": "Express Js is very powerful tool to write backend of softwares whether it is mobile app or web-app. I feel very comfortable while writing code using express js."
   },
   {
-    "title": "MongoDB(DataBase)",
-    "image": "expertise_svgs/mongo.svg",
-    "content": "MongoDB is My favorite database because of its syntax and advanced features  which are similar to JavaScript."
-  },
-  {
-    "title": "SQlite(DataBase)",
-    "image": "expertise_svgs/sqlite.svg",
-    "content": "SQlite is another light weight file based data base often used by me while dealing with small projects. "
-  },
-  {
     "title": "HTML 5(Language)",
     "image": "expertise_svgs/html.svg",
     "content": "I mostly use HTML for Hacking purpose  (Just kidding)😉."
@@ -68,5 +58,20 @@
     "title": "Firebase(BAAS)",
     "image": "expertise_svgs/firebase.svg",
     "content": "I mostly use firebase to provide medium size apps like blog app or small e-commerce store. "
+  },
+  {
+    "title": "MongoDB(DataBase)",
+    "image": "expertise_svgs/mongo.svg",
+    "content": "MongoDB is My favorite database because of its syntax and advanced features  which are similar to JavaScript."
+  },
+  {
+    "title": "SQlite(DataBase)",
+    "image": "expertise_svgs/sqlite.svg",
+    "content": "SQlite is another light weight file based data base often used by me while dealing with small projects. "
+  },
+  {
+    "title": "Postgres SQL(DataBase)",
+    "image": "expertise_svgs/postgres.svg",
+    "content": "Postgres Sql is another industry level open source SQL  database which is often recomended with django. Recently I start using it and TBH it is very amazing"
   }
 ]
