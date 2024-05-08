@@ -5,6 +5,7 @@ import { cn } from "../lib/utils";
 import "./globals.scss";
 import NextTopLoader from "nextjs-toploader";
 import "./(pages)/layout.scss";
+import "@/scss-utils/LinkStyle.scss";
 const exo = Exo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
