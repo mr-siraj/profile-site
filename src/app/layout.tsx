@@ -25,7 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(exo.className, "font-medium default relative")}>
+      <body
+        className={cn(
+          exo.className,
+          "font-medium default relative pattern_dark"
+        )}
+      >
         <NextTopLoader showSpinner={false} color="#ffffff" />
         <Cursor />
         {children}

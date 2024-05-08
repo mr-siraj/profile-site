@@ -6,7 +6,7 @@ import PageWrapper from "@/components/PageWrapper/PageWrapper";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <main className="flex pattern_dark  flex-col  min-h-screen">
+      <main className="flex   flex-col  min-h-screen">
         <header className="z-[999] sticky top-0 ">
           <Header />
         </header>
