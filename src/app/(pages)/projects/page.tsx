@@ -6,7 +6,7 @@ import projectdata from "./project.json";
 function ProjectPage() {
   return (
     <>
-      <main className="flex flex-col">
+      <main className="flex flex-col animate-page">
         <h1 className="md:text-4xl text-3xl text-center font-bold">
           Some Projects
         </h1>

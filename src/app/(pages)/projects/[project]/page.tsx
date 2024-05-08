@@ -1,7 +1,9 @@
 "use client";
 import projectData from "@/app/(pages)/projects/project.json";
 import ImageLoader from "@/components/ImgLoader/ImageLoader";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Suspense } from "react";
 
 interface ParamType {
@@ -13,12 +15,18 @@ function Project({ params }: { params: ParamType }) {
     (data) => data.project_title === params.project
   );
 
-  // Check if data and data.imageContainer.image are defined before accessing their properties
   const src = data && data.imageContainer && data.imageContainer.image;
 
   return (
     <>
-      <section className="animate-page">
+      <Link
+        title="Go Back"
+        href="/projects"
+        className="fixed z-10 left-10 top-10 pointer h-10 w-10 duration-300 transition-all hover:bg-white/20 flex justify-center items-center rounded-full "
+      >
+        <ArrowLeft />
+      </Link>
+      <section className="animate-page relative z-5">
         <div className="my-4">
           {src && (
             <Suspense fallback={<ImageLoader />}>
@@ -37,6 +45,17 @@ function Project({ params }: { params: ParamType }) {
         </h1>
         <p className="my-4 md:text-2xl text-lg text-balance  sm:text-justify font-normal tracking-wider">
           {data?.project_desc}
+        </p>
+        <p className="text-2xl text-center my-10 ">
+          {data && (
+            <Link
+              className="link_dark"
+              target="_blank"
+              href={data?.project_url}
+            >
+              Go to the website
+            </Link>
+          )}
         </p>
       </section>
     </>
