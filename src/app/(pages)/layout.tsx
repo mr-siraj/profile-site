@@ -14,7 +14,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           <PageWrapper>{children}</PageWrapper>
         </section>
         <footer className="absolute md:fixed bottom-2 right-5 text-xs z-[998]">
-          &copy; 2024 &nbsp;&nbsp;&nbsp;&nbsp;Zlaam
+          &copy; 2024 &nbsp;&nbsp;&nbsp;&nbsp;&trade;Zlaam
         </footer>
       </main>
     </>
