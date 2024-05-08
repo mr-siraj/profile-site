@@ -30,9 +30,12 @@ function Project_Card({ projectData }: { projectData: ProjectDataType }) {
             width={500}
           />
           <div className="link_container">
-            <Link className={`modal_navigator `} href={`#`}>
+            <Link
+              className={`modal_navigator justify-center flex items-center gap-2`}
+              href={`#`}
+            >
               <span className="link_text">View Site</span>
-              <span className="arrow_head">
+              <span className="">
                 <ArrowRight />
               </span>
             </Link>

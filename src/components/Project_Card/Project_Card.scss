@@ -41,24 +41,17 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: #ffffff;
-      border: 2px solid #8289efa5;
-      padding: 1rem 3rem;
+      border: 2px solid #ffffff;
+      padding: 0.5rem 1rem;
       border-radius: 50px;
-      display: flex;
-      align-items: center;
       transition: 0.3s ease;
       transition-property: border-color, background, filter;
 
       &:hover {
-        background: #008000;
-        filter: drop-shadow(0px 0px 15px #008000);
+        background: #28282b;
+        filter: drop-shadow(0px 0px 15px #28282b);
         border-color: transparent;
       }
-    }
-    & .arrow_head {
-      position: relative;
-      top: 0.3rem;
-      left: 1rem;
     }
   }
 }
