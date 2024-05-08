@@ -1,5 +1,5 @@
 import {} from "react";
-import "./layout.scss";
+
 import "../../scss-utils/LinkStyle.scss";
 import Header from "@/app/components/Header/Header";
 import PageWrapper from "@/components/PageWrapper/PageWrapper";
