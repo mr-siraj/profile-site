@@ -1,61 +1,71 @@
 [
   {
-    "title": "Python",
+    "title": "Python (Language)",
     "image": "expertise_svgs/python.svg",
     "content": "If Javascript wasn't there, then it would be my favorite language; of course, it is also my first ever programming language."
   },
   {
-    "title": "Django",
+    "title": "Django(Framework)",
     "image": "expertise_svgs/django.svg",
     "content": "It is extremly handy, and organized, and Django is my preferred framework for e-commerce sites due to its advanced features."
   },
   {
-    "title": "JavaScript",
+    "title": "JavaScript(Language)",
     "image": "expertise_svgs/js.svg",
     "content": "JavaScript is my favorite programming language. I feel very comfortable when it comes to working with JavaScript."
   },
   {
-    "title": "TypeScript",
+    "title": "TypeScript(Language)",
     "image": "expertise_svgs/typescript.svg",
     "content": "Typescript is known as the drug for developers. Some legend says if you taste typescript once, you will never love other tastes."
   },
   {
-    "title": "NextJS",
+    "title": "NextJS(Framework)",
     "image": "expertise_svgs/nextjs.svg",
     "content": "A Beautify creation by vercel \"Next JS\" is consider as best tool to write full-stack apps. "
   },
   {
-    "title": "React",
+    "title": "React(Library)",
     "image": "expertise_svgs/react.svg",
     "content": "The creation of Facebook is  really excellent choice for writing frontend stuff; of course, I am talking about our all-time favorite library, React-js."
   },
   {
-    "title": "MongoDB",
+    "title": "Express Js(Framework)",
+    "image": "expertise_svgs/express.svg",
+    "content": "Express Js is very powerful tool to write backend of softwares whether it is mobile app or web-app. I feel very comfortable while writing code using express js."
+  },
+  {
+    "title": "MongoDB(DataBase)",
     "image": "expertise_svgs/mongo.svg",
     "content": "MongoDB is My favorite database because of its syntax and advanced features  which are similar to JavaScript."
   },
   {
-    "title": "HTML 5",
+    "title": "SQlite(DataBase)",
+    "image": "expertise_svgs/sqlite.svg",
+    "content": "SQlite is another light weight file based data base often used by me while dealing with small projects. "
+  },
+  {
+    "title": "HTML 5(Language)",
     "image": "expertise_svgs/html.svg",
     "content": "I mostly use HTML for Hacking purpose  (Just kidding)😉."
   },
   {
-    "title": "Scss / Sass",
+    "title": "Scss / Sass(Language)",
     "image": "expertise_svgs/scss.svg",
     "content": "It's been a long time since I've unlocked the superpower of CSS, called SASS/SCSS, and it's just amazing."
   },
   {
-    "title": "Tailwind",
+    "title": "Tailwind(Framework)",
     "image": "expertise_svgs/tailwind.svg",
     "content": "A very beautiful micro-framework for writing fast styling. It boosts my speed 2X during styling."
   },
   {
-    "title": "Redux Toolkit",
+    "title": "Redux Toolkit(Library)",
     "image": "expertise_svgs/redux.svg",
     "content": "Redux Toolkit is a very beautiful library for state management. It helps a lot while dealing with complex states."
   },
   {
-    "title": "Firebase",
+    "title": "Firebase(BAAS)",
     "image": "expertise_svgs/firebase.svg",
     "content": "I mostly use firebase to provide medium size apps like blog app or small e-commerce store. "
   }
