@@ -25,6 +25,8 @@ function Project_Card({ projectData }: { projectData: ProjectDataType }) {
               alt={projectData.project_title}
               height={500}
               width={500}
+              placeholder="blur"
+              blurDataURL="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yN-emi7Fe6AZwzDBpPL9bAHaE8%26pid%3DApi&f=1&ipt=e35cd8b230c6a2a2af0f592473a093f8e547377ed682325f477467aa23e1aed4&ipo=images"
             />
           </Suspense>
           <div className="link_container">
@@ -34,7 +36,7 @@ function Project_Card({ projectData }: { projectData: ProjectDataType }) {
             >
               <span className="link_text">View Site</span>
               <span className="hidden sm:block">
-                <ArrowRight />
+                <ArrowRight size={20} />
               </span>
             </Link>
           </div>
