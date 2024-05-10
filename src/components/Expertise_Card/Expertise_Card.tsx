@@ -18,7 +18,14 @@ function Expertise_Card({ data }: { data: ExpertiseData }) {
             </div>
           }
         >
-          <Image src={data?.image} alt={data?.title} height={100} width={100} />
+          <Image
+            src={data?.image}
+            alt={data?.title}
+            height={100}
+            width={100}
+            blurDataURL="Loading...."
+            placeholder="blur"
+          />
         </Suspense>
         <div className="card__content backdrop-blur-sm p-5">
           <h1 className="card__title font-bold text-[1.25rem]">
