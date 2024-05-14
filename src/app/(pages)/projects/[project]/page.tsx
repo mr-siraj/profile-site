@@ -43,7 +43,7 @@ function Project({ params }: { params: ParamType }) {
         <h1 className="md:text-5xl text-3xl text-center font-bold">
           {data?.project_title}
         </h1>
-        <p className="my-4 md:text-2xl text-lg text-balance  sm:text-justify font-normal tracking-wider">
+        <p className="my-4 md:text-2xl text-lg text-balance  sm:text-left font-normal tracking-wider">
           {data?.project_desc}
         </p>
         <p className="text-2xl text-center my-10 ">
