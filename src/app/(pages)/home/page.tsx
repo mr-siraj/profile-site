@@ -12,14 +12,14 @@ function HomePage() {
           user-friendly and efficient web applications. With 2 years of
           <Link
             href="/expertise"
-            className="hover:text-blue-500 duration-300 transition-all text-[1.25rem] font-semibold text-white"
+            className="text-blue-700 duration-300 transition-all text-[1.25rem] font-semibold hover:text-white "
           >
             &nbsp; experience&nbsp;
           </Link>
           under my belt, I&apos;ve tackled a diverse range of
           <Link
             href="/projects"
-            className="hover:text-blue-500 duration-300 transition-all text-[1.25rem] font-semibold text-white"
+            className="text-blue-700 duration-300 transition-all text-[1.25rem] font-semibold hover:text-white "
           >
             &nbsp; projects
           </Link>

@@ -10,7 +10,7 @@ function ContactPage() {
     {
       Icon: MdEmail,
       IconName: "Email",
-      path: `mailto:mrzalaam@gmail.com`,
+      path: `mailto:zlaam.dev@gmail.com`,
     },
     {
       Icon: BsMessenger,
