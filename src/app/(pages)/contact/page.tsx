@@ -1,9 +1,8 @@
 import Link from "next/link";
 import {} from "react";
-import { BsMessenger } from "react-icons/bs";
+import { BsMessenger, BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
-import { IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
-import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
+import { IoLogoGithub } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 function ContactPage() {
   const contactLinks = [
@@ -28,7 +27,7 @@ function ContactPage() {
       path: `https://github.com/mr-zlaam`,
     },
     {
-      Icon: IoLogoTwitter,
+      Icon: BsTwitterX,
       IconName: "Twitter",
       path: `https://twitter.com/mr_zlaam`,
     },
