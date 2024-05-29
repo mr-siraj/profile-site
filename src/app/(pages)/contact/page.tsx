@@ -33,7 +33,7 @@ function ContactPage() {
     },
   ];
   return (
-    <>
+    <section className="animate-page">
       <h1 className=" flex items-center justify-center h-10 text-center sm:text-2xl text-xl ">
         <Link href={"/terms_&_conditions"} className="link_dark">
           Read This Before Contact
@@ -61,7 +61,7 @@ function ContactPage() {
           })}
         </div>
       </section>
-    </>
+    </section>
   );
 }
 
