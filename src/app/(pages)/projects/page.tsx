@@ -17,11 +17,7 @@ function ProjectPage() {
           >
             <ArrowDown />
           </Link>
-          <Link
-            href="https://drive.google.com/file/d/1WjNv4PsACYUfT3WpZHbuVWJUfc0uIBru/view?usp=drive_link"
-            target="_blank"
-            className="hover:underline text-xl font-semibold"
-          >
+          <Link href={"/pdf"} className="hover:underline text-xl font-semibold">
             Resume
           </Link>
         </h2>
