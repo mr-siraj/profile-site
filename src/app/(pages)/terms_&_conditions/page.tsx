@@ -4,7 +4,7 @@ import {} from "react";
 function Terms_And_Conditions() {
   return (
     <>
-      <section className=" h-[90dvh] flex justify-center items-center flex-col gap-10">
+      <section className=" h-[90dvh] animate-page flex justify-center items-center flex-col gap-10">
         <h1 className="md:text-5xl font-bold italic text-3xl text-center">
           We&apos;ll Update This Page Soon
         </h1>
