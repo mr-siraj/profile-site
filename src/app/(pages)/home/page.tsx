@@ -9,7 +9,7 @@ function HomePage() {
         </h1>
         <p className="md:leading-[2.5rem] leading-[2rem] md:my-4 my-2 text-balance text-lg text-white/80">
           A full-stack developer fueled by a deep passion for crafting
-          user-friendly and efficient web applications. With 2 years of
+          user-friendly and efficient web applications. With 1.5 years of
           <Link
             href="/expertise"
             className="text-blue-700 duration-300 transition-all text-[1.25rem] font-semibold hover:text-white "
