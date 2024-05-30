@@ -8,7 +8,7 @@ function PdfViewPage() {
           className="h-fit w-fit    md:h-full md:w-full"
           src="/resume/MrZlaamResume.pdf"
         ></iframe>
-        <Link className="link_dark text-xl my-4 sm:hidden" href={"/home"}>
+        <Link className="link_dark text-xl my-4 sm:hidden" href={"/projects"}>
           Go Back
         </Link>
       </section>
