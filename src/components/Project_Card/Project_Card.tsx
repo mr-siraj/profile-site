@@ -1,9 +1,12 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Fragment, Suspense } from "react";
-import ImageLoader from "../ImgLoader/ImageLoader";
+import { Fragment, useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Project_Card.scss";
-import Image from "next/image";
+import ImageLoader from "../ImgLoader/ImageLoader";
 export interface ProjectDataType {
   id: string;
   imageContainer: {
@@ -15,33 +18,46 @@ export interface ProjectDataType {
 }
 
 function Project_Card({ projectData }: { projectData: ProjectDataType }) {
+  const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);
+
+  const image = projectData.imageContainer.image;
+  useEffect(() => {
+    const img = new Image();
+    if (img)
+      img.onload = () => {
+        setIsImageLoaded(true);
+      };
+    img.src = image;
+  }, [image]);
   return (
     <>
-      <div className="project_card_container">
-        <Fragment>
-          <Suspense fallback={<ImageLoader />}>
-            <Image
+      {isImageLoaded ? (
+        <div className="project_card_container ">
+          <Fragment>
+            <LazyLoadImage
               src={projectData.imageContainer.image}
               alt={projectData.project_title}
-              height={500}
-              width={500}
-              placeholder="blur"
-              blurDataURL="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yN-emi7Fe6AZwzDBpPL9bAHaE8%26pid%3DApi&f=1&ipt=e35cd8b230c6a2a2af0f592473a093f8e547377ed682325f477467aa23e1aed4&ipo=images"
+              effect="blur"
             />
-          </Suspense>
-          <div className="link_container">
-            <Link
-              className={`modal_navigator justify-center flex items-center gap-2`}
-              href={`/projects/${projectData.project_title}`}
-            >
-              <span className="link_text">View Site</span>
-              <span className="hidden sm:block">
-                <ArrowRight size={20} />
-              </span>
-            </Link>
-          </div>
-        </Fragment>
-      </div>
+
+            <div className="link_container">
+              <Link
+                className={`modal_navigator justify-center flex items-center gap-2`}
+                href={`/projects/${projectData.project_title}`}
+              >
+                <span className="link_text">View Site</span>
+                <span className="hidden sm:block">
+                  <ArrowRight size={20} />
+                </span>
+              </Link>
+            </div>
+          </Fragment>
+        </div>
+      ) : (
+        <div className="h-[350px]  project_card_container  flex justify-center items-center">
+          <ImageLoader />
+        </div>
+      )}
     </>
   );
 }
