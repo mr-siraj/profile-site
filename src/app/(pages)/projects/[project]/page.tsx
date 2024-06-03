@@ -1,10 +1,9 @@
-"use client";
 import projectData from "@/app/(pages)/projects/project.json";
-import ImageLoader from "@/components/ImgLoader/ImageLoader";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense } from "react";
+import ImageRenderer from "./components/ImageRenderer";
+import PageWrapper from "@/components/PageWrapper/PageWrapper";
 
 interface ParamType {
   project: string;
@@ -15,7 +14,7 @@ function Project({ params }: { params: ParamType }) {
     (data) => data.project_title === params.project
   );
 
-  const src = data && data.imageContainer && data.imageContainer.image;
+  const image = data && data.imageContainer && data.imageContainer.image;
 
   return (
     <>
@@ -26,21 +25,11 @@ function Project({ params }: { params: ParamType }) {
       >
         <ArrowLeft />
       </Link>
-      <section className="animate-page relative z-5">
+      <div className="animate-page relative z-5">
         <div className="my-4">
-          {src && (
-            <Suspense fallback={<ImageLoader />}>
-              <Image
-                src={src as string}
-                alt={data?.project_title}
-                width={1000}
-                height={1000}
-                className="object-cover rounded-md shadow-md"
-              />
-            </Suspense>
-          )}
+          {image && <ImageRenderer image={image} title={data?.project_title} />}
         </div>
-        <h1 className="md:text-5xl text-3xl text-center font-bold">
+        <h1 className="md:text-5xl text-3xl text-center font-bold  w-full">
           {data?.project_title}
         </h1>
         <p className="my-4 md:text-2xl text-lg  text-left   sm:text-left font-normal tracking-wider">
@@ -57,7 +46,7 @@ function Project({ params }: { params: ParamType }) {
             </Link>
           )}
         </p>
-      </section>
+      </div>
     </>
   );
 }
