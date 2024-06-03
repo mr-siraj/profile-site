@@ -1,32 +1,48 @@
-import { Suspense } from "react";
+"use client";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import { useEffect, useState } from "react";
 import "./Expertise_Card.scss";
-import Image from "next/image";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import ImageLoader from "../ImgLoader/ImageLoader";
+
 interface ExpertiseData {
   title: string;
   content: string;
   image: string;
 }
 function Expertise_Card({ data }: { data: ExpertiseData }) {
+  const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);
+
+  const image = data.image;
+  useEffect(() => {
+    const img = new Image();
+    if (img)
+      img.onload = () => {
+        setIsImageLoaded(true);
+      };
+    img.src = image;
+  }, [image]);
   return (
     <>
       <div className="card">
-        <Suspense
-          fallback={
-            <div>
-              <ImageLoader />
-            </div>
-          }
-        >
-          <Image
+        {isImageLoaded ? (
+          <LazyLoadImage
             src={data?.image}
             alt={data?.title}
             height={100}
             width={100}
-            blurDataURL="Loading...."
-            placeholder="blur"
+            effect="blur"
+            onBlur={() => {
+              <div>
+                <ImageLoader />
+              </div>;
+            }}
           />
-        </Suspense>
+        ) : (
+          <ImageLoader />
+        )}
+
         <div className="card__content backdrop-blur-sm p-5">
           <h1 className="card__title font-bold text-[1.25rem]">
             {data?.title}
