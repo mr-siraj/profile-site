@@ -8,7 +8,9 @@ import PageWrapper from "@/components/PageWrapper/PageWrapper";
 interface ParamType {
   project: string;
 }
-
+export async function generateStaticParams() {
+  return projectData.map(({ id }) => id).slice(0, 5);
+}
 function Project({ params }: { params: ParamType }) {
   const data = projectData.find(
     (data) => data.project_title === params.project
