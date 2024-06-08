@@ -6,9 +6,15 @@ import ImageRenderer from "./components/ImageRenderer";
 interface ParamType {
   project: string;
 }
+//generate static params
 export async function generateStaticParams() {
-  return projectData.map(({ id }) => id).slice(0, 5);
+  return projectData
+    .map(({ project_title }) => ({
+      project: project_title,
+    }))
+    .slice(0, 5);
 }
+//render function
 function Project({ params }: { params: ParamType }) {
   const data = projectData.find(
     (data) => data.project_title === params.project
