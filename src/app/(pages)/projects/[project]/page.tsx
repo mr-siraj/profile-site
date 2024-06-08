@@ -1,9 +1,7 @@
 import projectData from "@/app/(pages)/projects/project.json";
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import ImageRenderer from "./components/ImageRenderer";
-import PageWrapper from "@/components/PageWrapper/PageWrapper";
 
 interface ParamType {
   project: string;
