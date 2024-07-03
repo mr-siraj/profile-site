@@ -20,13 +20,13 @@ const config: Config = {
     },
     extend: {
       animation: {
-        page: "page ease-in-out backwards 0.8s",
+        page: "page ease-in-out backwards 0.4s",
       },
       keyframes: {
         page: {
           "0%": {
             opacity: "0",
-            transform: "translateY(5%)",
+            transform: "translateY(2%)",
           },
           "100%%": {
             opacity: "1",
