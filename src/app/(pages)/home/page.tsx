@@ -5,7 +5,7 @@ function HomePage() {
     <>
       <main className="animate-page overflow-x-hidden  min-h-[70vh] md:min-h-[60vh] flex justify-center flex-col py-12   ">
         <h1 className="text-3xl md:text-5xl md:tracking-wider font-extrabold ">
-          I &apos; M &nbsp; ZLAAM
+          I &apos; M &nbsp; SIRAJ
         </h1>
         <p className="md:leading-[2.5rem] leading-[2rem] md:my-4 my-2 text-balance text-lg text-white/80">
           A full-stack developer fueled by a deep passion for crafting

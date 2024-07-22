@@ -5,7 +5,7 @@ import Link from "next/link";
 import NavLinks from "./NavLinks";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import logo from "@/images/logo/image.png";
+import logo from "@/images/logo/s-logo.png";
 function Header() {
   const pathname = usePathname();
   const regex = /^\/projects\/.+/;
